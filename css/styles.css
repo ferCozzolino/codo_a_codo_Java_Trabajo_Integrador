@@ -41,3 +41,8 @@ main .carousel-inner img {
     background-color: #82ad36;
    
 }
+
+#oradores img {
+    height: 348px;
+    object-fit: cover;
+}
