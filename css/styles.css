@@ -1,1 +1,16 @@
-body {background-color: blue;}
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: blue;
+    
+}
+
+#header img {
+    width: 80px;
+}
+
+.text-tickets {
+    color: #97c93e !important;
+}
