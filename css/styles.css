@@ -46,3 +46,12 @@ main .carousel-inner img {
     height: 348px;
     object-fit: cover;
 }
+
+#lugarFecha img {
+    max-width: 100%;
+}
+
+#lugarFecha  {
+    background-color: #343a40;
+    color: white;
+}
