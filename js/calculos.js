@@ -11,25 +11,32 @@ function calcular() {
 
     switch (categoria.value) {
         case "estudiante":
-            totalCompra.innerHTML = 200 * parseInt(cantidadEntradas.value) - (200 * 0.8) ;
-          // Código a ejecutar si la expresión coincide con valor1
+          precioSinDescuento = parseInt(cantidadEntradas.value)*200;
+          descuento15 = precioSinDescuento - (precioSinDescuento * 0.80);
+          totalCompra.innerHTML = "<span>Total a pagar: $" + descuento15 +  "</span>" ;
           break;
         case "trainee":
-          // Código a ejecutar si la expresión coincide con valor2
-          descuento50 = 200 * parseInt(cantidadEntradas.value) - (200 * 0.50);
+         
+          precioSinDescuento = parseInt(cantidadEntradas.value)*200;
+          descuento50 = precioSinDescuento - (precioSinDescuento * 0.50);          
           totalCompra.innerHTML = "<span>Total a pagar: $" + descuento50 +  "</span>" ;
           break;
         case "junior":
-          descuento15 = 200 * parseInt(cantidadEntradas.value) - (200 * 0.15);
+          precioSinDescuento = parseInt(cantidadEntradas.value)*200;
+          descuento15 = precioSinDescuento - (precioSinDescuento * 0.15);
           totalCompra.innerHTML = "<span>Total a pagar: $" + descuento15 +  "</span>" ;
 
           break;
-        // Puedes añadir más casos si es necesario
+        
         default:
-          // Código a ejecutar si la expresión no coincide con ningún valor
+          
       }
 
     
  
 
+}
+
+function borrar(){
+  totalCompra.innerHTML = "<span>Total a pagar: $ </span>" ;
 }
